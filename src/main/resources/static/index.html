@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	$.ajax({
+		  url: "/status",
+		  success: function( result ) {
+		    $( "#servidor" ).html( "<strong>" + result + "</strong>" );
+		  }
+		});
+	</script>
+
+    <p>Nome do seu servidor: <div id="servidor"></div>
+</body>
+</html>
