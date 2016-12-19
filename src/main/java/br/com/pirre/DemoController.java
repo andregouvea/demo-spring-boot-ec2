@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	//Code for demonstration only, ***Kids, don't try this at home*** :) 
+	//Code for demonstration only, ***Kids, don't try this at home*** :)
 	@RequestMapping("/status")
 	public String status() throws Exception{
 		StringBuilder result = new StringBuilder();
@@ -29,7 +29,7 @@ public class DemoController {
 		}
 		rd.close();
 
-		return new Date().toString() + " ID do servidor: " + result.toString();
+		return new Date().toString() + " Ari ID do servidor: " + result.toString();
 
 	}
 
