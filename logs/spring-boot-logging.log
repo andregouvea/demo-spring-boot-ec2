@@ -617,3 +617,128 @@ java.io.IOException: Server returned HTTP response code: 403 for URL: http://169
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.33.jar:8.0.33]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
 
+2017-03-27 13:41:43.506  INFO 47703 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Starting SpringBootDemoApplication on f45c899580f7.ant.amazon.com with PID 47703 (/Users/pirre/dev/java/source/demo-spring-boot-ec2/target/classes started by pirre in /Users/pirre/dev/java/source/demo-spring-boot-ec2)
+2017-03-27 13:41:43.510  INFO 47703 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : No active profile set, falling back to default profiles: default
+2017-03-27 13:41:43.606  INFO 47703 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7a682e: startup date [Mon Mar 27 13:41:43 BRT 2017]; root of context hierarchy
+2017-03-27 13:41:45.154  INFO 47703 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 5000 (http)
+2017-03-27 13:41:45.167  INFO 47703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-27 13:41:45.168  INFO 47703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-03-27 13:41:45.268  INFO 47703 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-27 13:41:45.269  INFO 47703 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1670 ms
+2017-03-27 13:41:45.701  INFO 47703 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-27 13:41:45.705  INFO 47703 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-27 13:41:45.705  INFO 47703 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-27 13:41:45.706  INFO 47703 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-27 13:41:45.706  INFO 47703 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-27 13:41:45.925  INFO 47703 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7a682e: startup date [Mon Mar 27 13:41:43 BRT 2017]; root of context hierarchy
+2017-03-27 13:41:45.992  INFO 47703 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/status]}" onto public java.lang.String br.com.pirre.DemoController.status() throws java.lang.Exception
+2017-03-27 13:41:45.996  INFO 47703 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-27 13:41:45.997  INFO 47703 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-27 13:41:46.002  INFO 47703 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2017-03-27 13:41:46.014  INFO 47703 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-27 13:41:46.026  INFO 47703 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:41:46.026  INFO 47703 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:41:46.073  INFO 47703 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:41:46.184  INFO 47703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-27 13:41:46.252  INFO 47703 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-27 13:41:46.364  INFO 47703 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 5000 (http)
+2017-03-27 13:41:46.371  INFO 47703 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Started SpringBootDemoApplication in 3.206 seconds (JVM running for 3.824)
+2017-03-27 13:42:14.409  INFO 47703 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-27 13:42:14.411  INFO 47703 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-27 13:42:14.433  INFO 47703 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-03-27 13:43:46.958  INFO 47703 --- [RMI TCP Connection(2)-192.168.15.15] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-27 13:43:46.959  INFO 47703 --- [RMI TCP Connection(2)-192.168.15.15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b7a682e: startup date [Mon Mar 27 13:41:43 BRT 2017]; root of context hierarchy
+2017-03-27 13:43:46.962  INFO 47703 --- [RMI TCP Connection(2)-192.168.15.15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-27 13:44:09.781  INFO 47749 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Starting SpringBootDemoApplication on f45c899580f7.ant.amazon.com with PID 47749 (/Users/pirre/dev/java/source/demo-spring-boot-ec2/target/classes started by pirre in /Users/pirre/dev/java/source/demo-spring-boot-ec2)
+2017-03-27 13:44:09.784  INFO 47749 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : No active profile set, falling back to default profiles: default
+2017-03-27 13:44:09.871  INFO 47749 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15f83b46: startup date [Mon Mar 27 13:44:09 BRT 2017]; root of context hierarchy
+2017-03-27 13:44:11.489  INFO 47749 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 5000 (http)
+2017-03-27 13:44:11.505  INFO 47749 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-27 13:44:11.506  INFO 47749 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-03-27 13:44:11.604  INFO 47749 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-27 13:44:11.604  INFO 47749 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1739 ms
+2017-03-27 13:44:11.989  INFO 47749 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-27 13:44:11.994  INFO 47749 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-27 13:44:11.995  INFO 47749 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-27 13:44:11.995  INFO 47749 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-27 13:44:11.997  INFO 47749 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-27 13:44:12.222  INFO 47749 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15f83b46: startup date [Mon Mar 27 13:44:09 BRT 2017]; root of context hierarchy
+2017-03-27 13:44:12.293  INFO 47749 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/status]}" onto public java.lang.String br.com.pirre.DemoController.status() throws java.lang.Exception
+2017-03-27 13:44:12.297  INFO 47749 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-27 13:44:12.298  INFO 47749 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-27 13:44:12.302  INFO 47749 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2017-03-27 13:44:12.315  INFO 47749 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-27 13:44:12.328  INFO 47749 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:44:12.328  INFO 47749 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:44:12.387  INFO 47749 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:44:12.501  INFO 47749 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-27 13:44:12.577  INFO 47749 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-27 13:44:12.669  INFO 47749 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 5000 (http)
+2017-03-27 13:44:12.683  INFO 47749 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Started SpringBootDemoApplication in 3.285 seconds (JVM running for 3.94)
+2017-03-27 13:44:16.564  INFO 47749 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-27 13:44:16.564  INFO 47749 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-27 13:44:16.577  INFO 47749 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-03-27 13:44:50.867  INFO 47749 --- [RMI TCP Connection(2)-192.168.15.15] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-27 13:44:50.868  INFO 47749 --- [RMI TCP Connection(2)-192.168.15.15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15f83b46: startup date [Mon Mar 27 13:44:09 BRT 2017]; root of context hierarchy
+2017-03-27 13:44:50.870  INFO 47749 --- [RMI TCP Connection(2)-192.168.15.15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-27 13:45:12.046  INFO 47766 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Starting SpringBootDemoApplication on f45c899580f7.ant.amazon.com with PID 47766 (/Users/pirre/dev/java/source/demo-spring-boot-ec2/target/classes started by pirre in /Users/pirre/dev/java/source/demo-spring-boot-ec2)
+2017-03-27 13:45:12.050  INFO 47766 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : No active profile set, falling back to default profiles: default
+2017-03-27 13:45:12.117  INFO 47766 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ea178e: startup date [Mon Mar 27 13:45:12 BRT 2017]; root of context hierarchy
+2017-03-27 13:45:13.744  INFO 47766 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 5000 (http)
+2017-03-27 13:45:13.760  INFO 47766 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-27 13:45:13.761  INFO 47766 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-03-27 13:45:13.859  INFO 47766 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-27 13:45:13.859  INFO 47766 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1746 ms
+2017-03-27 13:45:14.233  INFO 47766 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-27 13:45:14.239  INFO 47766 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-27 13:45:14.239  INFO 47766 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-27 13:45:14.241  INFO 47766 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-27 13:45:14.242  INFO 47766 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-27 13:45:14.466  INFO 47766 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ea178e: startup date [Mon Mar 27 13:45:12 BRT 2017]; root of context hierarchy
+2017-03-27 13:45:14.547  INFO 47766 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/status]}" onto public java.lang.String br.com.pirre.DemoController.status() throws java.lang.Exception
+2017-03-27 13:45:14.553  INFO 47766 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-27 13:45:14.554  INFO 47766 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-27 13:45:14.559  INFO 47766 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2017-03-27 13:45:14.573  INFO 47766 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-27 13:45:14.587  INFO 47766 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:45:14.587  INFO 47766 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:45:14.641  INFO 47766 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:45:14.803  INFO 47766 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-27 13:45:14.874  INFO 47766 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-27 13:45:14.998  INFO 47766 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 5000 (http)
+2017-03-27 13:45:15.002  INFO 47766 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Started SpringBootDemoApplication in 3.288 seconds (JVM running for 4.004)
+2017-03-27 13:45:18.323  INFO 47766 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-27 13:45:18.323  INFO 47766 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-27 13:45:18.336  INFO 47766 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2017-03-27 13:45:39.804  INFO 47766 --- [RMI TCP Connection(2)-192.168.15.15] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-03-27 13:45:39.804  INFO 47766 --- [RMI TCP Connection(2)-192.168.15.15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ea178e: startup date [Mon Mar 27 13:45:12 BRT 2017]; root of context hierarchy
+2017-03-27 13:45:39.807  INFO 47766 --- [RMI TCP Connection(2)-192.168.15.15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-27 13:46:58.449  INFO 47797 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Starting SpringBootDemoApplication on f45c899580f7.ant.amazon.com with PID 47797 (/Users/pirre/dev/java/source/demo-spring-boot-ec2/target/classes started by pirre in /Users/pirre/dev/java/source/demo-spring-boot-ec2)
+2017-03-27 13:46:58.452  INFO 47797 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : No active profile set, falling back to default profiles: default
+2017-03-27 13:46:58.517  INFO 47797 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44de8e4e: startup date [Mon Mar 27 13:46:58 BRT 2017]; root of context hierarchy
+2017-03-27 13:47:00.485  INFO 47797 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 5000 (http)
+2017-03-27 13:47:00.507  INFO 47797 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-27 13:47:00.509  INFO 47797 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-03-27 13:47:00.644  INFO 47797 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-27 13:47:00.645  INFO 47797 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2132 ms
+2017-03-27 13:47:01.026  INFO 47797 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-27 13:47:01.031  INFO 47797 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-27 13:47:01.032  INFO 47797 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-27 13:47:01.032  INFO 47797 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-27 13:47:01.033  INFO 47797 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-27 13:47:01.296  INFO 47797 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44de8e4e: startup date [Mon Mar 27 13:46:58 BRT 2017]; root of context hierarchy
+2017-03-27 13:47:01.382  INFO 47797 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/status]}" onto public java.lang.String br.com.pirre.DemoController.status() throws java.lang.Exception
+2017-03-27 13:47:01.386  INFO 47797 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-27 13:47:01.386  INFO 47797 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-27 13:47:01.390  INFO 47797 --- [restartedMain] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [static/index.html]
+2017-03-27 13:47:01.404  INFO 47797 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-27 13:47:01.424  INFO 47797 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:47:01.425  INFO 47797 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:47:01.489  INFO 47797 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-27 13:47:01.632  INFO 47797 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-27 13:47:01.698  INFO 47797 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-27 13:47:01.792  INFO 47797 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 5000 (http)
+2017-03-27 13:47:01.797  INFO 47797 --- [restartedMain] br.com.pirre.SpringBootDemoApplication   : Started SpringBootDemoApplication in 3.821 seconds (JVM running for 4.585)
+2017-03-27 13:47:06.107  INFO 47797 --- [http-nio-5000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-27 13:47:06.108  INFO 47797 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-27 13:47:06.120  INFO 47797 --- [http-nio-5000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
