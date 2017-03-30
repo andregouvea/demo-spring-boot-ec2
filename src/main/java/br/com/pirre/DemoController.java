@@ -19,6 +19,7 @@ public class DemoController {
 	@RequestMapping("/status")
 	public String status() throws Exception{
 		try{
+			logger.info("buscando metadata");
 			StringBuilder result = new StringBuilder();
 			URL url = new URL("http://169.254.169.254/latest/meta-data/instance-id");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -36,7 +37,7 @@ public class DemoController {
 		}catch (Exception ex){
 		}
 		
-		return "OK";
+		return "Localhost";
 	}
 
 
