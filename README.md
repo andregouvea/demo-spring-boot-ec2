@@ -4,7 +4,7 @@ Code for demonstration only, ***Kids, don't try this at home*** :)
 
 --
 Script for user data:
-
+```
 #!/bin/bash
 sudo yum update -y
 cd /home/ec2-user/
